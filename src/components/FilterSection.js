@@ -61,7 +61,7 @@ export const FilterSection = ({ filters, setFilters }) => {
             </div>
             <div className="mb-4">
                 <h3 className="font-semibold">State</h3>
-                {["California", "Texas", "New York, Minnesota, Kansas"].map((stateItem) => (
+                {["California", "Texas", "New York", "Minnesota", "Kansas"].map((stateItem) => (
                     <label
                         key={stateItem}
                         className="inline-flex items-center mr-3"
