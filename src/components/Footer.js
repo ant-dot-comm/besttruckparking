@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="bg-gradient-to-b from-neutral-100 to-white py-64">
       <div className="global-container">
         <div className="flex flex-col">
-          <Link to="/" className="text-[3.2rem] font-bold text-cyan-50 block mb-16">
+          <Link to="/besttruckparking" className="text-[3.2rem] font-bold text-cyan-50 block mb-16">
               Best Truck Parking
           </Link>
           <div className="flex items-center gap-16 mb-16"><FaPhone className="text-emerald-40" size={24} />123-123-1234</div>

@@ -12,33 +12,39 @@ export const Landing = () => {
                 <img
                     alt=""
                     src={`${process.env.PUBLIC_URL + "/images/hero.jpg"}`}
-                    className="object-none max-md:h-[20rem] md:h-[60rem] max-md:w-full md:w-1/2 animate-fade-in"
+                    className="object-none max-md:h-[20rem] md:h-[60rem] max-md:w-full md:w-1/2"
                 />
                 <div className="bg-neutral-100">
                     <div className="p-32">
-                        <h1 className="heading-display animate-slide-in-left">
+                        <h1 className="heading-display">
                             Monetize Your Parking Spaces with Ease
                         </h1>
-                        <p className="animate-slide-in-left delay-200">
+                        <p>
                             Whether you manage parking lots, structures, or marinas, our platform connects you with truckers and drivers in need of secure parking
                         </p>
-                        <Button color="dark" className="animate-pulse">Learn More</Button>
+                        <Button color="dark">Learn More</Button>
                     </div>
-                    <div className="hero__img-row flex bg-white rounded-lg shadow-lg p-8 md:w-[120%] md:-ml-[10%] md:-mr[10%] animate-slide-in-bottom">
+                    <div className="hero__img-row flex bg-white rounded-lg shadow-lg p-8 md:w-[120%] md:-ml-[10%] md:-mr[10%]">
                         <img
                             alt=""
-                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white animate-fade-in"
-                            src={`${process.env.PUBLIC_URL + "/images/trucklot.jpg"}`}
+                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white"
+                            src={`${
+                                process.env.PUBLIC_URL + "/images/trucklot.jpg"
+                              }`}
                         />
                         <img
                             alt=""
-                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white animate-fade-in delay-200"
-                            src={`${process.env.PUBLIC_URL + "/images/trucklot.jpg"}`}
+                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white"
+                            src={`${
+                                process.env.PUBLIC_URL + "/images/trucklot.jpg"
+                            }`}
                         />
                         <img
                             alt=""
-                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white animate-fade-in delay-400"
-                            src={`${process.env.PUBLIC_URL + "/images/trucklot.jpg"}`}
+                            className="rounded-lg object-cover h-[20rem] w-1/3 border-8 border-white"
+                            src={`${
+                                process.env.PUBLIC_URL + "/images/trucklot.jpg"
+                            }`}
                         />
                     </div>
                 </div>

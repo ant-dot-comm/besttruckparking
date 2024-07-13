@@ -37,7 +37,7 @@ export const Header = () => {
                         "global-container flex justify-between items-center",
                     )}
                 >
-                    <Link to="/" className="text-[2.4rem] font-bold">
+                    <Link to="/besttruckparking" className="text-[2.4rem] font-bold">
                         Best Truck Parking
                     </Link>
 
