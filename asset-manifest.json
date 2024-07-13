@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/eaglepay/static/css/main.9fea4701.css",
+    "main.js": "/eaglepay/static/js/main.32672a09.js",
+    "static/js/453.b3a65ddf.chunk.js": "/eaglepay/static/js/453.b3a65ddf.chunk.js",
+    "index.html": "/eaglepay/index.html",
+    "main.9fea4701.css.map": "/eaglepay/static/css/main.9fea4701.css.map",
+    "main.32672a09.js.map": "/eaglepay/static/js/main.32672a09.js.map",
+    "453.b3a65ddf.chunk.js.map": "/eaglepay/static/js/453.b3a65ddf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fea4701.css",
+    "static/js/main.32672a09.js"
+  ]
+}
