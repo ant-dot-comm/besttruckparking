@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/besttruckparking/static/css/main.9fea4701.css",
-    "main.js": "/besttruckparking/static/js/main.797e8560.js",
+    "main.js": "/besttruckparking/static/js/main.34b3c8c1.js",
     "static/js/453.b583fe9b.chunk.js": "/besttruckparking/static/js/453.b583fe9b.chunk.js",
     "index.html": "/besttruckparking/index.html",
     "main.9fea4701.css.map": "/besttruckparking/static/css/main.9fea4701.css.map",
-    "main.797e8560.js.map": "/besttruckparking/static/js/main.797e8560.js.map",
+    "main.34b3c8c1.js.map": "/besttruckparking/static/js/main.34b3c8c1.js.map",
     "453.b583fe9b.chunk.js.map": "/besttruckparking/static/js/453.b583fe9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fea4701.css",
-    "static/js/main.797e8560.js"
+    "static/js/main.34b3c8c1.js"
   ]
 }
