@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bestruckparking/static/css/main.9fea4701.css",
-    "main.js": "/bestruckparking/static/js/main.1fcb4e72.js",
-    "static/js/453.b583fe9b.chunk.js": "/bestruckparking/static/js/453.b583fe9b.chunk.js",
-    "index.html": "/bestruckparking/index.html",
-    "main.9fea4701.css.map": "/bestruckparking/static/css/main.9fea4701.css.map",
-    "main.1fcb4e72.js.map": "/bestruckparking/static/js/main.1fcb4e72.js.map",
-    "453.b583fe9b.chunk.js.map": "/bestruckparking/static/js/453.b583fe9b.chunk.js.map"
+    "main.css": "/besttruckparking/static/css/main.9fea4701.css",
+    "main.js": "/besttruckparking/static/js/main.a38d0d1e.js",
+    "static/js/453.b583fe9b.chunk.js": "/besttruckparking/static/js/453.b583fe9b.chunk.js",
+    "index.html": "/besttruckparking/index.html",
+    "main.9fea4701.css.map": "/besttruckparking/static/css/main.9fea4701.css.map",
+    "main.a38d0d1e.js.map": "/besttruckparking/static/js/main.a38d0d1e.js.map",
+    "453.b583fe9b.chunk.js.map": "/besttruckparking/static/js/453.b583fe9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fea4701.css",
-    "static/js/main.1fcb4e72.js"
+    "static/js/main.a38d0d1e.js"
   ]
 }
