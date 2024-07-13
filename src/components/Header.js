@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import { ReactComponent as Logo} from '../components/visuals/logo-custom.svg';
 import { Button } from '../components';
 
 import './Header.scss';
@@ -14,8 +13,8 @@ export const Header = () => {
 
     const links = (
         <>
-            <Link to="/eaglepay/capabilities" onClick={() => setMenuOpen(false)}>Capabilities</Link>
-            <Link to="/eaglepay/use-cases" onClick={() => setMenuOpen(false)}>UseCases</Link>
+            <Link to="/besttruckparking/locations" onClick={() => setMenuOpen(false)}>Locations</Link>
+            <Link to="/besttruckparking/how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
             <Button
                 as="a"
                 href="https://calendly.com/park-nation/introduction-to-eaglepay-platform"
@@ -24,18 +23,7 @@ export const Header = () => {
                 color="dark"
                 size="sm"
                 >
-                Book a Demo
-            </Button>
-            <Button
-                as="a"
-                href="https://www.truckparknation.com/login"
-                target="_blank"
-                rel="noreferrer"
-                color="hollow"
-                onClick={() => setMenuOpen(false)}
-                size="sm"
-                >
-                Sign In / Register
+                Start Today
             </Button>
         </>
     )
@@ -43,15 +31,14 @@ export const Header = () => {
     return (
         <div className="relative">
             {/* Desktop */}
-            <header className="header global-container fixed w-full top-8 left-1/2 -translate-x-1/2 z-50">
+            <header className="header h-64 w-full fixed top-[0] bg-cyan-50 shadow-lg text-white z-[1000]">
                 <nav
                     className={classNames(
-                        "flex justify-between items-center",
-                        "p-16 rounded-lg shadow-[0_2px_8px_0_rgba(0,0,0,0.1)] backdrop-blur-md bg-neutral-50/50"
+                        "global-container flex justify-between items-center",
                     )}
                 >
-                    <Link to="/eaglepay">
-                        <Logo height={40} />
+                    <Link to="/" className="text-[2.4rem] font-bold">
+                        Best Truck Parking
                     </Link>
 
                     <div className="hidden sm:flex items-center gap-16">
@@ -80,9 +67,6 @@ export const Header = () => {
                         "header-overlay__content"
                     )}
                 >
-                    <Link to="/eaglepay">
-                        <Logo height={40} className="mb-32" />
-                    </Link>
                     <div className="text-xl flex flex-col items-center gap-32 w-full">
                         {links}
                     </div>

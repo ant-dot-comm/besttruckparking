@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background: #E5E1DB;
+  background: #ffffff;
 	font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
   font-weight: 400;
-  padding-top: 13.6rem;
+  padding-top: 6.4rem;
 }
 
 code {

@@ -1,27 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { Footer2, Header } from './components';
-import { Landing, Capabilities, Contact, UseCases } from './pages';
-// import Contact from './pages/Contact';
+import { Footer, Header } from './components';
+import { Landing, Locations, HowItWorks } from './pages';
 
 import './App.scss';
 
 const App = () => {
   return (
     <Router>
-      <>
+      <div className='w-full'>
         <Header/>
         
         <Routes>
-          <Route path="/eaglepay" element={<Landing />} />
-          <Route path="/eaglepay/capabilities" element={<Capabilities />} />
-          <Route path="/eaglepay/use-cases" element={<UseCases />} />
-          <Route path="/eaglepay/contact" element={<Contact />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/besttruckparking/locations" element={<Locations />} />
+          <Route path="/besttruckparking/how-it-works" element={<HowItWorks />} />
         </Routes>
         
-        <Footer2 />
-      </>
+        <Footer />
+      </div>
     </Router>
   );
 }
