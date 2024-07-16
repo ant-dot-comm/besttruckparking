@@ -5,6 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import { Button } from '../components';
+import { ReactComponent as Logo} from '../components/visuals/BTP-logo.svg';
 
 import './Header.scss';
 
@@ -13,32 +14,22 @@ export const Header = () => {
 
     const links = (
         <>
-            <Link to="/besttruckparking/locations" onClick={() => setMenuOpen(false)}>Locations</Link>
+            <Link to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" onClick={() => setMenuOpen(false)}>Locations</Link>
             <Link to="/besttruckparking/how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
-            <Button
-                as="a"
-                href="https://calendly.com/park-nation/introduction-to-eaglepay-platform"
-                target="_blank"
-                rel="noreferrer"
-                color="dark"
-                size="sm"
-                >
-                Start Today
-            </Button>
-        </>
+        </> 
     )
 
     return (
         <div className="relative">
             {/* Desktop */}
-            <header className="header h-64 w-full fixed top-[0] bg-cyan-50 shadow-lg text-white z-[1000]">
+            <header className="header h-64 w-full flex items-center fixed top-[0] bg-cyan-50 shadow-lg text-white z-[1000]">
                 <nav
                     className={classNames(
-                        "global-container flex justify-between items-center",
+                        "global-container w-full flex justify-between items-center",
                     )}
                 >
-                    <Link to="/besttruckparking" className="text-[2.4rem] font-bold">
-                        Best Truck Parking
+                    <Link to="/besttruckparking">
+                        <Logo />
                     </Link>
 
                     <div className="hidden sm:flex items-center gap-16">

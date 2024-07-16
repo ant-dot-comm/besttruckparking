@@ -11,11 +11,12 @@ export const Button = ({ as = 'button', to, href, children, className = '', full
     'font-semibold text-center',
     {
       'bg-gradient-to-b from-emerald-20 to-emerald-10 text-emerald-50 border border-transparent': props.color === 'light',
-      'bg-gradient-to-b from-emerald-50 to-emerald-40 text-emerald-10 border border-transparent': props.color === 'dark',
+      'bg-gradient-to-b from-emerald-500 to-emerald-600 text-white border border-transparent': props.color === 'dark',
       'border border-emerald-50': props.color === 'hollow',
       'w-full': full,
       'px-16 py-8 rounded-[.8rem]': size === 'sm',
       'px-16 py-12 rounded-md': size === 'md',
+      'px-24 py-16 rounded-md': size === 'lg',
     },
     className
   );
