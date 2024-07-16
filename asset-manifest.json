@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/besttruckparking/static/css/main.9fea4701.css",
-    "main.js": "/besttruckparking/static/js/main.34b3c8c1.js",
+    "main.css": "/besttruckparking/static/css/main.1242358d.css",
+    "main.js": "/besttruckparking/static/js/main.d39307f4.js",
     "static/js/453.b583fe9b.chunk.js": "/besttruckparking/static/js/453.b583fe9b.chunk.js",
+    "static/media/trucktop.png": "/besttruckparking/static/media/trucktop.c17d9a9499130e8af169.png",
+    "static/media/BTP-logo.svg": "/besttruckparking/static/media/BTP-logo.b61fc9eacd589089b7c7729caffa8961.svg",
+    "static/media/arrow-circle.svg": "/besttruckparking/static/media/arrow-circle.17ed2701bf0fe490a320ebe6e7910d4c.svg",
     "index.html": "/besttruckparking/index.html",
-    "main.9fea4701.css.map": "/besttruckparking/static/css/main.9fea4701.css.map",
-    "main.34b3c8c1.js.map": "/besttruckparking/static/js/main.34b3c8c1.js.map",
+    "main.1242358d.css.map": "/besttruckparking/static/css/main.1242358d.css.map",
+    "main.d39307f4.js.map": "/besttruckparking/static/js/main.d39307f4.js.map",
     "453.b583fe9b.chunk.js.map": "/besttruckparking/static/js/453.b583fe9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fea4701.css",
-    "static/js/main.34b3c8c1.js"
+    "static/css/main.1242358d.css",
+    "static/js/main.d39307f4.js"
   ]
 }
