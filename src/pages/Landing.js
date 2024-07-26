@@ -23,6 +23,7 @@ export const Landing = () => {
         hidden: { opacity: 0},
         show: { opacity: 1, transition: { duration: 1, ease: "easeIn" } }
     }
+    
     return (
         <div className="home">
             {/* Hero Section */}
@@ -110,42 +111,42 @@ export const Landing = () => {
                     <motion.ul
                         initial="hidden"
                         whileInView="show"
-                        className="flex max-md:flex-col md:flex-row gap-16 items-center md:justify-between"
+                        className="flex max-md:flex-col md:flex-row gap-16 items-start md:justify-between"
                         variants={container}
                         viewport={{ once: true, amount: 0.5 }} // Adjust the viewport settings as needed
                     >
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50} className="block md:w-1/3">
                             <div className="text-center">
                                 <p className="text-40 font-black leading-none mb-1 text-cyan-50">
                                     1
                                 </p>
                                 <p className="heading-3">Sign Up</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p>Create an account to list your property as a Property Member.</p>
                             </div>
                         </motion.li>
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50}  className="block md:w-1/3">
                             <div className="text-center">
                                 <p className="text-40 font-black leading-none mb-1 text-cyan-50">
                                     2
                                 </p>
                                 <p className="heading-3">Sign Up</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p>Add the location suitable for truck parking, just click Become a Property Member. If you have any questions, feel free to reach out via the Contact us page.</p>
                             </div>
                         </motion.li>
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50}  className="block md:w-1/3">
                             <div className="text-center">
                                 <p className="text-40 font-black leading-none mb-1 text-cyan-50">
                                     3
                                 </p>
                                 <p className="heading-3">Sign Up</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p>Be notified via email and text of every new booking. Make sure to provide contact information for the appropriate Property Member party to handle the bookings.</p>
                             </div>
                         </motion.li>
                     </motion.ul>
                 </div>
                 
                 {/* Benefits Section */}
-                <div className="py-64 px-16 rounded-lg text-white" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/benefitbg.png"})`}}>
+                {/* <div className="py-64 px-16 rounded-lg text-white" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/benefitbg.png"})`}}>
                     <p className="heading-2 text-center mb-64">
                         Benefits
                     </p>
@@ -156,25 +157,25 @@ export const Landing = () => {
                         variants={container}
                         viewport={{ once: true, amount: 0.5 }} // Adjust the viewport settings as needed
                     >
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50} className="block md:w-1/3">
                             <div className="text-center">
-                                <p className="text-40 font-black leading-none mb-1 ">
+                                <p className="text-40 font-black leading-none mb-1">
                                     1
                                 </p>
                                 <p className="heading-3">Sign Up</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
                         </motion.li>
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50} className="block md:w-1/3">
                             <div className="text-center">
-                                <p className="text-40 font-black leading-none mb-1 ">
+                                <p className="text-40 font-black leading-none mb-1">
                                     2
                                 </p>
                                 <p className="heading-3">Sign Up</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
                         </motion.li>
-                        <motion.li variants={item} size={50}>
+                        <motion.li variants={item} size={50} className="block md:w-1/3">
                             <div className="text-center">
                                 <p className="text-40 font-black leading-none mb-1">
                                     3
@@ -182,6 +183,32 @@ export const Landing = () => {
                                 <p className="heading-3">Sign Up</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
+                        </motion.li>
+                    </motion.ul>
+                </div> */}
+                
+                <div className="py-64 px-16 rounded-lg text-white" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/images/benefitbg.png"})`}}>
+                    <p className="heading-2 text-center mb-64">
+                        There's a truck parking shortage
+                    </p>
+                    <motion.ul 
+                        initial="hidden"
+                        whileInView="show"
+                        className="flex flex-col gap-16 items-center"
+                        variants={container}
+                        viewport={{ once: true, amount: 0.5 }} // Adjust the viewport settings as needed
+                    >
+                        <motion.li variants={item} size={50}>
+                            There is 1 parking space for every 11 trucks on the road
+                        </motion.li>
+                        <motion.li variants={item} size={50}>
+                            Drivers spend an average of 58 minutes per day looking for parking and on average, lose $5,500 annually in fuel costs searching for parking
+                        </motion.li>
+                        <motion.li variants={item} size={50}>
+                            New construction is expensive and time consuming, often costing $100,000-$200,000 per space and taking years to finish
+                        </motion.li>
+                        <motion.li variants={item} size={50}>
+                            Be part of the solution by listing your property with Best Truck Parking.
                         </motion.li>
                     </motion.ul>
                 </div>
