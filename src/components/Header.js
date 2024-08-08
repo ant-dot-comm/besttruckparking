@@ -15,7 +15,7 @@ export const Header = () => {
 
     const links = (
         <>
-            <Button to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="green" className="md:-mt-8 md:-mb-8 shadow-md">
+            <Button as="a" to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="green" className="md:-mt-8 md:-mb-8 shadow-md">
                 Find locations
             </Button>
             <Link to="/besttruckparking/how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
@@ -27,19 +27,19 @@ export const Header = () => {
             {/* Desktop */}
             <header 
                 className={classNames(
-                    "header global-container w-full flex items-center shadow-lg",
-                    "fixed top-[0] left-1/2 -translate-x-1/2",
-                    "bg-white text-neutral-800 z-[1000] md:rounded-full md:mt-32",
+                    "header w-full flex items-center shadow-lg",
+                    "fixed top-[0] md:top-32 md:left-1/2 md:-translate-x-1/2 max-w-[1188px]",
+                    "bg-white text-neutral-800 z-[1000] md:rounded-full",
                 )}
             >
                 <nav
                     className={classNames(
-                        "w-full flex justify-between items-center px-32",
+                        "w-full flex justify-between items-center md:px-32",
                     )}
                 >
                     <Link to="/besttruckparking" className="md:-mt-8 md:-mb-8">
                         <Logo className="max-md:hidden" />
-                        <MobileLogo className="md:hidden" />
+                        <MobileLogo className="md:hidden h-[4rem]" />
                     </Link>
 
                     <div className="hidden md:flex items-center gap-16">
@@ -49,7 +49,7 @@ export const Header = () => {
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         type="button"
-                        className="block text-black focus:outline-none md:hidden p-16"
+                        className="block text-neutral-800 focus:outline-none md:hidden p-16"
                     >
                         <FaBars size={24} />
                     </button>

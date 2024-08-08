@@ -32,6 +32,10 @@
                 height: 28rem;
                 width: 21rem;
                 left: 6rem;
+
+                @media (max-width: 768px) {
+                    left: 9rem;
+                }
             }
         }
         &--flip {
@@ -40,6 +44,9 @@
             }
             .step-container__illustration__content {
                 left: 3rem;
+                @media (max-width: 768px) {
+                    left: 6rem;
+                }
             }
         }
     }

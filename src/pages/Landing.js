@@ -24,25 +24,25 @@ export const Landing = () => {
       
     const item = {
         hidden: { opacity: 0},
-        show: { opacity: 1, transition: { duration: 1, ease: "easeIn" } }
+        show: { opacity: 1, transition: { duration: .5, ease: "easeIn" } }
     }
 
     const stepContainer = (index, title, text, illustrationContent, flip, alt) => {
         return (
             <div 
                 className={classNames(
-                    "step-container flex flex-row gap-16 w-full",
-                    flip ? "flex-row-reverse step-container--flip" : "flex-row",
+                    "step-container flex flex-col gap-16 w-full",
+                    flip ? "md:flex-row-reverse step-container--flip" : "md:flex-row",
                 )}
             >
-                <div className="step-container__content flex flex-col gap-16">
+                <div className="step-container__content flex flex-col md:gap-16 max-md:text-center">
                     <h2 className="text-32 font-bold text-blue-900">{index}.</h2>
                     <h2 className="text-32 font-bold text-green-600">{title}</h2>
                     <p className="">{text}</p>
                 </div>
                 <div className="step-container__illustration relative">
                     <div className="step-container__illustration__content absolute top-[0]">{illustrationContent}</div>
-                    {alt ? <IllustrationCTAalt /> : <IllustrationCTA />}
+                    {alt ? <IllustrationCTAalt className="max-md:mx-auto" /> : <IllustrationCTA className="max-md:mx-auto" />}
                 </div>
             </div>
         )
@@ -75,7 +75,7 @@ export const Landing = () => {
                         <p>
                             Helping to provide parking for truckers by monetizing vacant properties for landowners
                         </p>
-                        <Button to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="blue" className="my-16 shadow-md">
+                        <Button as="a" to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="blue" className="block mt-24 shadow-md">
                             Find locations
                         </Button>
                     </motion.div>

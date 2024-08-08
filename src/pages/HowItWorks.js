@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactPlayer from 'react-player'
 
 import { Button } from '../components/Button';
+import { ReactComponent as IllustrationDecor1} from '../components/visuals/decor-1.svg';
 import { ReactComponent as IllustrationGroup} from '../components/visuals/decor-group-1.svg';
 import { ReactComponent as IllustrationGroup3} from '../components/visuals/decor-3.svg';
 import { ReactComponent as LinesDecor} from '../components/visuals/lines-decor.svg';
@@ -57,9 +58,10 @@ export const HowItWorks = () => {
 
   return (
     <>
-      <div className="global-container pt-[20rem] pb-96">
-        <div className="pl-[10rem] relative">
-          <IllustrationGroup className="absolute left-[0] top-[-7rem] -z-10" />
+      <div className="global-container pt-[15rem] md:pt-[20rem] pb-48 md:pb-96">
+        <div className="md:pl-[10rem] relative">
+          <IllustrationGroup className="absolute left-[0] top-[-7rem] -z-10 max-md:hidden" />
+          <IllustrationDecor1 className="absolute left-[0] top-[-7rem] -z-10 md:hidden" />
           <h1 className="text-48 font-bold mb-4 leading-[5.6rem]">
             <span className='relative'><span className='test-highlight text-white'>Make money</span></span> parking trucks on your industrial property.
           </h1>
@@ -75,23 +77,23 @@ export const HowItWorks = () => {
                 process.env.PUBLIC_URL + "/images/map.jpg"
             }`}
         />
-        <div className="flex flex-col gap-16 w-full text-center items-center md:items-start md:justify-center bg-neutral-100 relative">
+        <div className="flex flex-col gap-16 w-full max-md:py-64 overflow-hidden text-center items-center md:items-start md:justify-center bg-neutral-100 relative">
             <div className="w-full z-10">
-                <p className="text-40 font-black leading-none mb-1 text-btpGreen-50">
+                <p className="text-40 font-black leading-none mb-1 text-blue-900">
                 10,000+
                 </p>
                 <p>Active truckers looking for parking weekly</p>
             </div>
 
             <div className="w-full z-10">
-                <p className="text-40 font-black leading-none mb-1 text-btpGreen-50">
+                <p className="text-40 font-black leading-none mb-1 text-blue-900">
                 20,000+
                 </p>
                 <p>Bookings so far</p>
             </div>
 
             <div className="w-full z-10">
-                <p className="text-40 font-black leading-none mb-1 text-btpGreen-50 ">
+                <p className="text-40 font-black leading-none mb-1 text-blue-900">
                 508
                 </p>
                 <p>Property Members and growing daily</p>
@@ -102,14 +104,16 @@ export const HowItWorks = () => {
         </div>
       </div>
 
-      <div className="global-container my-96 flex gap-32">
-        <div>
-          <p className="text-24 text-neutral-500">How to find and reserve truck parking</p>
-          <ReactPlayer url='https://www.youtube.com/watch?v=6mq4aMyJB6g&t=2s' />
-        </div>
-        <div>
-          <p className="text-24 text-neutral-500">How to add and manage your property</p>
-          <ReactPlayer url='https://www.youtube.com/watch?v=SzoAWZ9e28M' />
+      <div className="bg-gradient-to-b from-blue-900 bg-blue-800 py-64 text-white">
+        <div className="global-container flex gap-32 max-md:flex-col justify-center text-center">
+          <div className="flex items-center flex-col">
+            <p className="text-24">How to find and reserve truck parking</p>
+            <ReactPlayer url='https://www.youtube.com/watch?v=6mq4aMyJB6g&t=2s' width={360} />
+          </div>
+          <div className="flex items-center flex-col">
+            <p className="text-24">How to add and manage your property</p>
+            <ReactPlayer url='https://www.youtube.com/watch?v=SzoAWZ9e28M' width={360} />
+          </div>
         </div>
       </div>
       
@@ -117,7 +121,7 @@ export const HowItWorks = () => {
         <h2 className="heading-display font-bold mb-16">Frequently asked questions</h2>
 
         {questions.map((question, index) => (
-          <div key={index} className="border-b border-gray-200 pt-16 pb-8">
+          <div key={index} className="border-b border-gray-200 pt-16">
             <button
               className="w-full text-left px-4 py-2 focus:outline-none"
               onClick={() => toggleAccordion(index)}

@@ -7,5 +7,9 @@
     border-radius: 1.6rem;
     background-color: #00BE00;
     z-index: -1;
-    right: -.8rem
+    right: -.8rem;
+
+    @media (max-width: 768px) {
+        left: -5rem;
+    }   
 }
