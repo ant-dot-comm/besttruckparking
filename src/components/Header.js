@@ -6,6 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 import { Button } from '../components';
 import { ReactComponent as Logo} from '../components/visuals/BTP-logo.svg';
+import { ReactComponent as MobileLogo} from '../components/visuals/BTP-logomark.svg';
 
 import './Header.scss';
 
@@ -14,7 +15,9 @@ export const Header = () => {
 
     const links = (
         <>
-            <Link to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" onClick={() => setMenuOpen(false)}>Locations</Link>
+            <Button to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="green" className="md:-mt-8 md:-mb-8 shadow-md">
+                Find locations
+            </Button>
             <Link to="/besttruckparking/how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
         </> 
     )
@@ -22,24 +25,31 @@ export const Header = () => {
     return (
         <div className="relative">
             {/* Desktop */}
-            <header className="header h-64 w-full flex items-center fixed top-[0] bg-cyan-50 shadow-lg text-white z-[1000]">
+            <header 
+                className={classNames(
+                    "header global-container w-full flex items-center shadow-lg",
+                    "fixed top-[0] left-1/2 -translate-x-1/2",
+                    "bg-white text-neutral-800 z-[1000] md:rounded-full md:mt-32",
+                )}
+            >
                 <nav
                     className={classNames(
-                        "global-container w-full flex justify-between items-center",
+                        "w-full flex justify-between items-center px-32",
                     )}
                 >
-                    <Link to="/besttruckparking">
-                        <Logo />
+                    <Link to="/besttruckparking" className="md:-mt-8 md:-mb-8">
+                        <Logo className="max-md:hidden" />
+                        <MobileLogo className="md:hidden" />
                     </Link>
 
-                    <div className="hidden sm:flex items-center gap-16">
+                    <div className="hidden md:flex items-center gap-16">
                         {links}
                     </div>
                     
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         type="button"
-                        className="block text-black focus:outline-none sm:hidden p-16"
+                        className="block text-black focus:outline-none md:hidden p-16"
                     >
                         <FaBars size={24} />
                     </button>

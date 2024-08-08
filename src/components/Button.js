@@ -10,8 +10,8 @@ export const Button = ({ as = 'button', to, href, children, className = '', full
     `button button--${as}`,
     'font-semibold text-center',
     {
-      'bg-gradient-to-b from-emerald-20 to-emerald-10 text-emerald-50 border border-transparent': props.color === 'light',
-      'bg-gradient-to-b from-emerald-500 to-emerald-600 text-white border border-transparent': props.color === 'dark',
+      'bg-btpGreen-50 border border-transparent': props.color === 'green',
+      'bg-blue-900 text-white border border-transparent': props.color === 'blue',
       'border border-emerald-50': props.color === 'hollow',
       'w-full': full,
       'px-16 py-8 rounded-[.8rem]': size === 'sm',

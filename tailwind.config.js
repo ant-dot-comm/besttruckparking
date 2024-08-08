@@ -27,6 +27,7 @@ module.exports = {
       '28': '2.8rem',
       '32': '3.2rem',
       '40': '4rem',
+      '48': '4.8rem',
     },
     extend: {
       colors: {
@@ -36,6 +37,13 @@ module.exports = {
           30: '#599DB0',
           40: '#599DB0',
           50: '#28397a',
+        },
+        btpGreen: {
+          10: '#00BE00',
+          20: '#00BE00',
+          30: '#00BE00',
+          40: '#00BE00',
+          50: '#00BE00',
         },
         'white': '#ffffff',
       }

@@ -1,0 +1,11 @@
+.test-highlight:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    bottom: 0;
+    border-radius: 1.6rem;
+    background-color: #00BE00;
+    z-index: -1;
+    right: -.8rem
+}
