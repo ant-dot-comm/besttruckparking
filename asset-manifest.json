@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/besttruckparking/static/css/main.dde4d0e8.css",
-    "main.js": "/besttruckparking/static/js/main.34bcd0c0.js",
+    "main.css": "/besttruckparking/static/css/main.2444338f.css",
+    "main.js": "/besttruckparking/static/js/main.d10f95df.js",
     "reactPlayerYouTube.js": "/besttruckparking/static/js/reactPlayerYouTube.30f672db.chunk.js",
     "reactPlayerSoundCloud.js": "/besttruckparking/static/js/reactPlayerSoundCloud.beb3d7e6.chunk.js",
     "reactPlayerVimeo.js": "/besttruckparking/static/js/reactPlayerVimeo.7338c6e5.chunk.js",
@@ -22,13 +22,12 @@
     "static/media/illustrationCTA-alt.svg": "/besttruckparking/static/media/illustrationCTA-alt.3a4dd0995c9100eb33f57dbe46ff968a.svg",
     "static/media/illustrationCTA.svg": "/besttruckparking/static/media/illustrationCTA.625c14288c7282c5c38921334876fc6c.svg",
     "static/media/decor-group-1.svg": "/besttruckparking/static/media/decor-group-1.63c4caee57d53b3ab7116355a1598758.svg",
-    "static/media/arrow-circle.svg": "/besttruckparking/static/media/arrow-circle.17ed2701bf0fe490a320ebe6e7910d4c.svg",
     "index.html": "/besttruckparking/index.html",
     "static/media/decor-1.svg": "/besttruckparking/static/media/decor-1.1420339c0d601490298e4fe06ba7ef41.svg",
     "static/media/decor-3.svg": "/besttruckparking/static/media/decor-3.e0cbabe7442406890e53f733ea93d46c.svg",
     "static/media/lines-decor.svg": "/besttruckparking/static/media/lines-decor.0999ac3551572f74c94eecee55083d06.svg",
-    "main.dde4d0e8.css.map": "/besttruckparking/static/css/main.dde4d0e8.css.map",
-    "main.34bcd0c0.js.map": "/besttruckparking/static/js/main.34bcd0c0.js.map",
+    "main.2444338f.css.map": "/besttruckparking/static/css/main.2444338f.css.map",
+    "main.d10f95df.js.map": "/besttruckparking/static/js/main.d10f95df.js.map",
     "reactPlayerYouTube.30f672db.chunk.js.map": "/besttruckparking/static/js/reactPlayerYouTube.30f672db.chunk.js.map",
     "reactPlayerSoundCloud.beb3d7e6.chunk.js.map": "/besttruckparking/static/js/reactPlayerSoundCloud.beb3d7e6.chunk.js.map",
     "reactPlayerVimeo.7338c6e5.chunk.js.map": "/besttruckparking/static/js/reactPlayerVimeo.7338c6e5.chunk.js.map",
@@ -46,7 +45,7 @@
     "453.b583fe9b.chunk.js.map": "/besttruckparking/static/js/453.b583fe9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dde4d0e8.css",
-    "static/js/main.34bcd0c0.js"
+    "static/css/main.2444338f.css",
+    "static/js/main.d10f95df.js"
   ]
 }
