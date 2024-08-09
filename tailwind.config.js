@@ -30,6 +30,9 @@ module.exports = {
       '48': '4.8rem',
     },
     extend: {
+      boxShadow: {
+        'centered': '0 2px 8px 0px rgba(0, 0, 0, 0.15)',
+      },
       colors: {
         cyan: {
           10: '#599DB0',

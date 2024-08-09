@@ -15,7 +15,7 @@ export const Header = () => {
 
     const links = (
         <>
-            <Button as="a" to="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="green" className="md:-mt-8 md:-mb-8 shadow-md">
+            <Button as="a" href="https://portal.eaglepay.co/onboarding?siteId=-1&type=r" color="green" className="md:-mt-8 md:-mb-8 shadow-centered">
                 Find locations
             </Button>
             <Link to="/besttruckparking/how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
@@ -27,8 +27,9 @@ export const Header = () => {
             {/* Desktop */}
             <header 
                 className={classNames(
-                    "header w-full flex items-center shadow-lg",
-                    "fixed top-[0] md:top-32 md:left-1/2 md:-translate-x-1/2 max-w-[1188px]",
+                    "header w-full flex items-center shadow-centered",
+                    "fixed top-[0] max-w-[1188px]",
+                    "md:top-32 md:left-1/2 md:-translate-x-1/2",
                     "bg-white text-neutral-800 z-[1000] md:rounded-full",
                 )}
             >
@@ -68,6 +69,9 @@ export const Header = () => {
                         "header-overlay__content"
                     )}
                 >
+                    <Link to="/besttruckparking" onClick={() => setMenuOpen(!menuOpen)} className="absolute top-8 left-[0]">
+                        <MobileLogo className="md:hidden h-[4rem]" />
+                    </Link>
                     <div className="text-xl flex flex-col items-center gap-32 w-full">
                         {links}
                     </div>

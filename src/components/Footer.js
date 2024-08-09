@@ -6,7 +6,7 @@ import { ReactComponent as Logo} from '../components/visuals/BTP-logo.svg';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-neutral-100 to-white py-64">
+    <footer className="bg-gradient-to-t from-neutral-100 to-white pt-64">
       <div className="global-container flex flex-col items-center">
         <Link to="/besttruckparking" className="text-[3.2rem] font-bold text-cyan-50 block mb-16">
             <Logo />
