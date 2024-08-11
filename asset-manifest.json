@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/besttruckparking/static/css/main.2444338f.css",
-    "main.js": "/besttruckparking/static/js/main.2e97cfe1.js",
+    "main.css": "/besttruckparking/static/css/main.efb074b2.css",
+    "main.js": "/besttruckparking/static/js/main.25031ebf.js",
     "reactPlayerYouTube.js": "/besttruckparking/static/js/reactPlayerYouTube.30f672db.chunk.js",
     "reactPlayerSoundCloud.js": "/besttruckparking/static/js/reactPlayerSoundCloud.beb3d7e6.chunk.js",
     "reactPlayerVimeo.js": "/besttruckparking/static/js/reactPlayerVimeo.7338c6e5.chunk.js",
@@ -26,8 +26,8 @@
     "static/media/decor-1.svg": "/besttruckparking/static/media/decor-1.1420339c0d601490298e4fe06ba7ef41.svg",
     "static/media/decor-3.svg": "/besttruckparking/static/media/decor-3.e0cbabe7442406890e53f733ea93d46c.svg",
     "static/media/lines-decor.svg": "/besttruckparking/static/media/lines-decor.0999ac3551572f74c94eecee55083d06.svg",
-    "main.2444338f.css.map": "/besttruckparking/static/css/main.2444338f.css.map",
-    "main.2e97cfe1.js.map": "/besttruckparking/static/js/main.2e97cfe1.js.map",
+    "main.efb074b2.css.map": "/besttruckparking/static/css/main.efb074b2.css.map",
+    "main.25031ebf.js.map": "/besttruckparking/static/js/main.25031ebf.js.map",
     "reactPlayerYouTube.30f672db.chunk.js.map": "/besttruckparking/static/js/reactPlayerYouTube.30f672db.chunk.js.map",
     "reactPlayerSoundCloud.beb3d7e6.chunk.js.map": "/besttruckparking/static/js/reactPlayerSoundCloud.beb3d7e6.chunk.js.map",
     "reactPlayerVimeo.7338c6e5.chunk.js.map": "/besttruckparking/static/js/reactPlayerVimeo.7338c6e5.chunk.js.map",
@@ -45,7 +45,7 @@
     "453.b583fe9b.chunk.js.map": "/besttruckparking/static/js/453.b583fe9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2444338f.css",
-    "static/js/main.2e97cfe1.js"
+    "static/css/main.efb074b2.css",
+    "static/js/main.25031ebf.js"
   ]
 }
