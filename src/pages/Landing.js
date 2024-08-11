@@ -10,7 +10,7 @@ import classNames from "classnames";
 
 export const Landing = () => {
 
-    const stepContainer = (index, title, text, illustrationContent, flip, alt) => {
+    const stepContainer = (index, title, text, flip, alt) => {
         return (
             <div 
                 className={classNames(
@@ -24,7 +24,6 @@ export const Landing = () => {
                     <p className="">{text}</p>
                 </div>
                 <div className="step-container__illustration relative">
-                    <div className="step-container__illustration__content absolute top-[0]">{illustrationContent}</div>
                     {alt ? <IllustrationCTAalt className="max-md:mx-auto" /> : <IllustrationCTA className="max-md:mx-auto" />}
                 </div>
             </div>
@@ -81,18 +80,18 @@ export const Landing = () => {
                 <p className="text-24 text-center mb-96 leading-none">
                     For Property Managers
                 </p>
-                <motion.ul
+                {/* <motion.ul
                     initial={{ opacity: 0, x: -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     className="flex flex-col gap-64 items-start max-w-5xl mx-auto"
-                >
+                > */}
+                <ul>
                     <li className="">
                         {stepContainer(
                             1,
                             "Sign Up",
                             <p><a href="/">Create an account</a> to list your property as a Property Member.</p>, 
-                            "", 
                             false, 
                         )}
                     </li>
@@ -104,7 +103,6 @@ export const Landing = () => {
                                 <p>Add the location suitable for truck parking, just click <a href="/">Become a Property Member</a>. If you have any questions, feel free to reach out via the Contact us page.</p> 
                                 <p>Watch the video 'How to add your property on Truck Parking Club' below to learn how to add your property step-by-step.</p>
                             </>, 
-                            "", 
                             true, 
                         )}
                     </li>
@@ -113,11 +111,11 @@ export const Landing = () => {
                             3,
                             "Handle Bookings",
                             <p>Be notified via email and text of every new booking. Make sure to provide contact information for the appropriate Property Member party to handle the bookings.</p>, 
-                            "", 
                             false, 
                         )}
                     </li>
-                </motion.ul>
+                </ul>
+                {/* </motion.ul> */}
             </div>
 
             {/* For Truck Memembers - How it works Section */}
@@ -129,18 +127,18 @@ export const Landing = () => {
                     <p className="text-24 text-center mb-96 leading-none">
                         For Property Managers
                     </p>
-                    <motion.ul
+                    {/* <motion.ul
                         initial={{ opacity: 0, x: -200 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         className="flex flex-col gap-64 items-start max-w-5xl mx-auto"
-                    >
+                    > */}
+                    <ul>
                         <li className="">
                             {stepContainer(
                                 1,
                                 "Sign Up",
                                 <p><a href="/">Create an account</a> to list your property as a Property Member.</p>, 
-                                "", 
                                 false, 
                                 true,
                             )}
@@ -153,7 +151,6 @@ export const Landing = () => {
                                     <p>Add the location suitable for truck parking, just click <a href="/">Become a Property Member</a>. If you have any questions, feel free to reach out via the Contact us page.</p> 
                                     <p>Watch the video 'How to add your property on Truck Parking Club' below to learn how to add your property step-by-step.</p>
                                 </>, 
-                                "", 
                                 true, 
                                 true, 
                             )}
@@ -163,12 +160,12 @@ export const Landing = () => {
                                 3,
                                 "Handle Bookings",
                                 <p>Be notified via email and text of every new booking. Make sure to provide contact information for the appropriate Property Member party to handle the bookings.</p>, 
-                                "", 
                                 false, 
                                 true,
                             )}
                         </li>
-                    </motion.ul>
+                    </ul>
+                    {/* </motion.ul> */}
                 </div>
             </div>
         </div>

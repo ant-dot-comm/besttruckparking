@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import { FaPhone, FaMapPin, FaEnvelope } from 'react-icons/fa';
 import { ReactComponent as Logo} from '../components/visuals/BTP-logo.svg';
 
 export const Footer = () => {
