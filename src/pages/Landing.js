@@ -14,7 +14,7 @@ export const Landing = () => {
         return (
             <div 
                 className={classNames(
-                    "step-container flex flex-col gap-16 w-full",
+                    "step-container flex flex-col md:items-center gap-16 w-full",
                     flip ? "md:flex-row-reverse step-container--flip" : "md:flex-row",
                 )}
             >
@@ -86,7 +86,7 @@ export const Landing = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     className="flex flex-col gap-64 items-start max-w-5xl mx-auto"
                 > */}
-                <ul>
+                <ul className="flex flex-col gap-64 items-start max-w-5xl mx-auto">
                     <li className="">
                         {stepContainer(
                             1,
@@ -133,7 +133,7 @@ export const Landing = () => {
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         className="flex flex-col gap-64 items-start max-w-5xl mx-auto"
                     > */}
-                    <ul>
+                    <ul className="flex flex-col gap-64 items-start max-w-5xl mx-auto">
                         <li className="">
                             {stepContainer(
                                 1,
