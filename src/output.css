@@ -545,40 +545,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -779,10 +745,6 @@ video {
 
 .max-w-\[1188px\] {
   max-width: 1188px;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
 }
 
 .-translate-x-1\/2 {
@@ -1077,12 +1039,12 @@ video {
   padding-top: 1.6rem;
 }
 
-.pt-\[15rem\] {
-  padding-top: 15rem;
-}
-
 .pt-64 {
   padding-top: 6.4rem;
+}
+
+.pt-\[15rem\] {
+  padding-top: 15rem;
 }
 
 .text-left {
@@ -1332,16 +1294,6 @@ code {
     top: 3.2rem;
   }
 
-  .md\:mx-16 {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-  }
-
-  .md\:mx-8 {
-    margin-left: .8rem;
-    margin-right: .8rem;
-  }
-
   .md\:-mb-8 {
     margin-bottom: -.8rem;
   }
@@ -1385,6 +1337,10 @@ code {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-center {
